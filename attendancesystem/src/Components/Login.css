@@ -1,0 +1,79 @@
+/* Container styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form styles */
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Alert messages */
+.alert-message {
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  color: green;
+}
+
+.alert-danger {
+  color: red;
+}
+
+/* Buttons */
+.btn-login,
+.btn-signup {
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-login {
+  background: linear-gradient(135deg, #007bff 25%, #0056b3 100%);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+.btn-login:hover {
+  background: linear-gradient(135deg, #0056b3 25%, #003f7f 100%);
+  box-shadow: 0 20px 40px rgba(0, 123, 255, 0.5);
+}
+
+.btn-signup {
+  background: linear-gradient(135deg, #6c757d 25%, #495057 100%);
+  color: white;
+  box-shadow: 0 10px 20px rgba(108, 117, 125, 0.3);
+}
+
+.btn-signup:hover {
+  background: linear-gradient(135deg, #495057 25%, #343a40 100%);
+  box-shadow: 0 20px 40px rgba(108, 117, 125, 0.5);
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+/* Form groups */
+.role-group {
+  margin-bottom: 1rem;
+}

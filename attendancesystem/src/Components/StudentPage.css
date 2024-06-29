@@ -1,0 +1,52 @@
+.student-page {
+  display: flex;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.sidebar h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+  color: #fcfbfb;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar .flex-column .nav-link {
+  display: flex;
+  align-items: center;
+  color: #f8f3f3;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.sidebar .flex-column .nav-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar .flex-column .nav-link .icon {
+  margin-right: 10px;
+}
+
+.content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1,0 +1,131 @@
+/* Ensure styles are scoped to EditProfile component */
+.edit-profile-container {
+  width: 800px; /* Slightly widened */
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+  margin: auto; /* Center container horizontally */
+}
+
+.edit-profile-container h3 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Form Styles */
+.edit-profile-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center all form elements */
+}
+
+.edit-profile-container .form-group {
+  width: 100%; /* Make form-group take full width */
+  margin-bottom: 15px;
+}
+
+.edit-profile-container .form-control {
+  width: 100%; /* Make input fields take full width */
+  height: 45px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.edit-profile-container .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transform: scale(1.05); /* Slightly scale up on focus */
+}
+
+.image-preview {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 50%; /* Make image circular */
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.edit-profile-container .form-label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+  width: 100%; /* Make labels take full width */
+}
+
+/* Button Styles */
+.edit-profile-container button[type="submit"] {
+  width: 100%; /* Make button take full width */
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.edit-profile-container button[type="submit"]:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
+  transform: translateY(-3px);
+}
+
+.edit-profile-container button[type="submit"]:active {
+  transform: translateY(1px);
+}
+
+/* Message Styles */
+.edit-profile-container .text-success {
+  color: #28a745;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}

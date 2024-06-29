@@ -1,0 +1,238 @@
+.admin-page {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar styling */
+.sidebar {
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding-top: 20px;
+  width: 250px;
+  transition: width 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar .nav-link .icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.2rem; /* Increase icon size */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057;
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+.sidebar .nav-link.active {
+  background-color: #495057;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+  flex-grow: 1;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  transition: padding 0.3s ease;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-card, .attendance-card {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.student-card:hover, .attendance-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.student-card .card-body, .attendance-card .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-card .card-title, .attendance-card .card-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.student-card .card-text, .attendance-card .card-text {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.centered-content {
+  text-align: center;
+}
+
+.centered-content h3 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.centered-content .btn-primary {
+  margin-top: 20px;
+  background-color: #2980b9;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.centered-content .btn-primary:hover {
+  background-color: #3498db;
+  transform: scale(1.05);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border: 0.25em solid #f3f3f3;
+  border-top: 0.25em solid #343a40;
+  border-radius: 50%;
+  animation: spin 0.75s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #495057;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+}
+
+table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select {
+  margin-top: 10px;
+}
+
+.navbar {
+  background-color: #343a40;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #fff;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #adb5bd;
+}
+.admin-info {
+  text-align: right;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}

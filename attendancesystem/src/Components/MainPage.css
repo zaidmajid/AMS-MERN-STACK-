@@ -1,0 +1,84 @@
+.main-page {
+  font-family: 'Arial', sans-serif;
+  height: 100vh; /* Full height of viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #24292e; /* Dark background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link .nav-icon {
+  margin-right: 8px; /* Space between icon and text */
+  font-size: 1.2rem; /* Increase icon size */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #6a11cb !important; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* New class to move navigation to the left side */
+.nav-left {
+  margin-left: auto !important;
+}
+
+.main-content {
+  background: linear-gradient(to bottom right, #4c64f2, #8a3ab9); /* Gradient background */
+  color: #fff; /* White text */
+  padding: 120px 0; /* Vertical padding */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.main-content:hover {
+  background-color: #5539f0; /* Darker background on hover */
+}
+
+.main-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700; /* Bold font */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation */
+}
+
+.main-content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in-out; /* Fade in animation */
+}
+
+.btn-primary {
+  background-color: #6a11cb; 
+  border-color: #6a11cb; 
+  padding: 15px 30px; 
+  font-size: 1.2rem;
+  border-radius: 30px; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #8a3ab9; 
+  transform: scale(1.05); 
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

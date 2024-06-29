@@ -1,0 +1,26 @@
+.space {
+    margin-top: 20px; /* Adjust the value as needed */
+  }
+  .centered-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  

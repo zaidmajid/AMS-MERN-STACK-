@@ -1,0 +1,118 @@
+/* Scoped styles for GenerateReport component */
+
+/* Container styling for overall layout */
+.generate-report-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  padding: 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+  color: white;
+  border-radius: 10px; /* Rounded corners for container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: all 0.3s ease; /* Smooth transitions */
+  max-width: 1200px;
+  margin: 20px auto; /* Center the container */
+}
+
+/* Heading styling */
+.generate-report-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.generate-report-container .text-center {
+  text-align: center;
+}
+
+/* Form styling */
+.generate-report-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.generate-report-container form label {
+  margin-right: 10px;
+}
+
+.generate-report-container form select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.generate-report-container form select:focus {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.generate-report-container .btn-primary {
+  background-color: #2980b9;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.generate-report-container .btn-primary:hover {
+  background-color: #3498db;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.generate-report-container .text-danger {
+  color: #e74c3c;
+}
+
+/* Table styling */
+.generate-report-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; /* Table background color */
+  border-radius: 8px; /* Rounded corners for table */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Table shadow for depth */
+  transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.generate-report-container table thead th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.generate-report-container table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.generate-report-container table tbody tr:hover {
+  background-color: #ecf0f1;
+}
+
+.generate-report-container table tbody td {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Card styling */
+.generate-report-container #report-content {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Add fade-in animation */
+.generate-report-container .fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
